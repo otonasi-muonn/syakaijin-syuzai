@@ -3,30 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>d さんへのインタビュー</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
-        header { border-bottom: 2px solid #eee; padding-bottom: 20px; margin-bottom: 40px; }
-        h1 { font-size: 2.5em; }
-        h2 { font-size: 1.5em; border-left: 5px solid #007bff; padding-left: 10px; margin-top: 50px; }
-        .meta-info { background-color: #f8f9fa; padding: 15px; border-radius: 8px; }
-    </style>
+    <title>株式会社 社会人ではない(無)さんへのインタビュー</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <h1>d さんへのインタビュー</h1>
-        <div class="meta-info">
-            <p><strong>年齢：</strong> 〇〇歳</p>
-            <p><strong>ご職業：</strong> 〇〇系の仕事</p>
-        </div>
-    </header>
-    <main>
-        <h2>仕事をすることになった経緯</h2><p>（ここに回答を記入）</p>
-        <h2>専門知識をどう手に入れたか</h2><p>（ここに回答を記入）</p>
-        <h2>仕事の好きなところ</h2><p>（ここに回答を記入）</p>
-        <h2>仕事の嫌いなところ</h2><p>（ここに回答を記入）</p>
-        <h2>１日はどういう感じで進むのか</h2><p>（ここに回答を記入）</p>
-        <h2>大学生へのアドバイス</h2><p>（ここに回答を記入）</p>
-    </main>
+
+    <div id="main-content" style="display: none;">
+        <header>
+            <h1>株式会社 社会人ではない(無)さんへのインタビュー</h1>
+            <div class="meta-info">
+                <p><strong>ご職業：</strong> 創作</p>
+                <p><strong>年齢：</strong> 25歳</p>
+            </div>
+        </header>
+
+        <main>
+            <h2>仕事をすることになった経緯</h2>
+            <div class="answer">
+                <p>なんとなく？</p>
+            </div>
+
+            <h2>専門知識をどう手に入れたか</h2>
+            <div class="answer">
+                <p>独学</p>
+            </div>
+            
+            <h2>仕事の好きなところ</h2>
+            <div class="answer">
+                <p>楽しい</p>
+            </div>
+
+            <h2>仕事の嫌いなところ</h2>
+            <div class="answer">
+                <p>機材がたけぇ</p>
+            </div>
+
+            <h2>１日の大雑把なタイムスケジュール</h2>
+            <div class="answer">
+                <p>想像の毎日</p>
+            </div>
+
+            <h2>大学生へのアドバイス</h2>
+            <div class="advice">
+                <p>働け</p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        (function() {
+            // Dさんページのパスワードを設定
+            const correctPassword = "Su2";
+
+            const enteredPassword = prompt("閲覧するにはパスワードを入力してください：");
+
+            if (enteredPassword === correctPassword) {
+                document.getElementById('main-content').style.display = 'block';
+            } else {
+                alert("パスワードが違います。");
+                document.body.innerHTML = '<h1 style="text-align: center; margin-top: 50px;">アクセスが許可されていません。</h1>';
+            }
+        })();
+    </script>
+
 </body>
 </html>

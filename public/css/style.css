@@ -55,3 +55,44 @@ h2 {
     margin-top: 10px;
     border-radius: 0 8px 8px 0;
 }
+
+/* ===== ホーム画面用の追加スタイル ===== */
+
+.interview-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.interview-link-card {
+    display: block;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.interview-link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.interview-link-card .name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.interview-link-card .job {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.interview-link-card .age {
+    font-size: 0.9em;
+    color: #6c757d;
+}

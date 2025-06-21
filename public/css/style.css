@@ -1,0 +1,57 @@
+/* 全てのページに適用される共通スタイルシート */
+body { 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.8; 
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #333;
+    background-color: #fdfdfd;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+h1 { 
+    font-size: 2.5em; 
+    color: #2c3e50; 
+}
+
+h2 { 
+    font-size: 1.5em;
+    border-left: 5px solid #2c3e50;
+    padding-left: 15px;
+    margin-top: 50px;
+    color: #2c3e50;
+}
+
+.meta-info {
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: inline-block; /* 中央寄せのため */
+}
+
+.meta-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.answer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.advice {
+    background-color: #fffbe6;
+    border-left: 5px solid #f0ad4e;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 0 8px 8px 0;
+}

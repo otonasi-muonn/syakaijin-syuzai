@@ -5,86 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eさんへのインタビュー</title>
     <link rel="stylesheet" href="../css/style.css">
-    <style>
-        /* Eさんのページにだけ適用する追加スタイル（箇条書き用） */
-        .answer ul {
-            margin: 0;
-            padding-left: 20px;
-        }
-    </style>
+    <style>.answer ul { margin: 0; padding-left: 20px; }</style>
 </head>
 <body>
-
-    <div id="main-content" style="display: none;">
-        <header>
-            <h1>Eさんへのインタビュー</h1>
-            <div class="meta-info">
-                <p><strong>ご職業：</strong> MFP(複合機)のメンテナンス・修理</p>
-                <p><strong>年齢：</strong> 21歳</p>
-            </div>
-        </header>
-
-        <main>
-            <h2>仕事をすることになった経緯</h2>
-            <div class="answer">
-                <p>成り行きです。学校を卒業したら働かなくちゃ、という思考と、単純にバイトだけでは色々と賄えなかったためです。</p>
-            </div>
-
-            <h2>専門知識をどう手に入れたか</h2>
-            <div class="answer">
-                <p>会社に入ってから、研修に参加したり、自分で調べたり。もしくは学校で学んでいたことを元に知識を蓄えました。</p>
-            </div>
-            
-            <h2>仕事の好きなところ</h2>
-            <div class="answer">
-                <ul>
-                    <li>外回りがメインのため、自分の好きな時に休憩を挟むことが出来る。</li>
-                    <li>仕事をこなすと、たまにお客様からお礼や、お礼代わりに飲み物などを貰えること。</li>
-                </ul>
-            </div>
-
-            <h2>仕事の嫌いなところ</h2>
-            <div class="answer">
-                <p>たまに我儘なお客様がいるため、それの対応が少々面倒なところです。</p>
-            </div>
-
-            <h2>１日の大雑把なタイムスケジュール</h2>
-            <div class="answer">
-                <p>
-                    8:25、出社<br>
-                    8:35、朝礼<br>
-                    8:45、外回りの準備<br>
-                    9:20、外回り<br>
-                    12:00~13:00、昼休憩<br>
-                    13:10、午後開始<br>
-                    16:30、事務所に戻る<br>
-                    16:35~17:30、日報作成、17:30に定時<br>
-                    (だいたい定時で帰れることは無い。退勤は18:00前後)
-                </p>
-            </div>
-
-            <h2>大学生へのアドバイス</h2>
-            <div class="advice">
-                <p>入りたいと思っている職種が既に決まっている人は、それに関する資格の勉強をしていたほうがいい。会社に入ってからその資格を取らされる可能性があるため、会社に入ってから勉強するよりかは、事前知識を頭に入れてた方が資格は取りやすくなる。</p>
-            </div>
-        </main>
-    </div>
-
-    <script>
-        (function() {
-            // Eさんページのパスワードを設定
-            const correctPassword = "gM3";
-
-            const enteredPassword = prompt("閲覧するにはパスワードを入力してください：");
-
-            if (enteredPassword === correctPassword) {
-                document.getElementById('main-content').style.display = 'block';
-            } else {
-                alert("パスワードが違います。");
-                document.body.innerHTML = '<h1 style="text-align: center; margin-top: 50px;">アクセスが許可されていません。</h1>';
-            }
-        })();
-    </script>
-
+    <header>
+        <h1>Eさんへのインタビュー</h1>
+        <div class="meta-info">
+            <p><strong>ご職業：</strong> MFP(複合機)のメンテナンス・修理</p>
+            <p><strong>年齢：</strong> age</p>
+        </div>
+    </header>
+    <main>
+        <h2>仕事をすることになった経緯</h2>
+        <div class="answer"><p>成り行きです。学校を卒業したら働かなくちゃ、という思考と、単純にバイトだけでは色々と賄えなかったためです。</p></div>
+        <h2>専門知識をどう手に入れたか</h2>
+        <div class="answer"><p>会社に入ってから、研修に参加したり、会社の先輩に教えてもらったりなどです。また、学校で学んでいた知識から発展させたりなどしました。</p></div>
+        <h2>仕事の好きなところ</h2>
+        <div class="answer"><ul><li>外回りがメインのため、自分の好きな時に休憩を挟むことが出来ます。</li><li>仕事をこなすと、たまにお客様からお礼や、お礼代わりに飲み物などを貰えることです。</li></ul></div>
+        <h2>仕事の嫌いなところ</h2>
+        <div class="answer"><p>お客様にアポをとる際、都合が悪いと3、4件ほど断られ、月のスケジュールが乱れてしまうことがあります。また、たまにお客様が理不尽な対応(対応費の値切りなど)をしてくることがあるため、それの説得や納得させることが少々面倒に感じることがあります。</p></div>
+        <h2>１日の大雑把なタイムスケジュール</h2>
+        <div class="answer"><p>8:25、出社<br>8:35、朝礼<br>8:45、外回りの準備<br>9:20、外回り<br>12:00~13:00、昼休憩<br>13:10、午後開始<br>16:30、事務所に戻る<br>16:35~17:30、日報作成、17:30に定時<br>(だいたい定時で帰れることは無い。退勤は18:00前後)</p></div>
+        <h2>大学生へのアドバイス</h2>
+        <div class="advice"><p>入りたいと思っている職種が既に決まっている人は、それに関する資格の勉強をしていたほうがいいです。会社に入ってからその資格を取らされる可能性があるため、会社に入ってから勉強するよりかは、事前知識を頭に入れてた方が資格は取りやすくなります。</p></div>
+    </main>
+    <footer class="footer-nav">
+        <a href="../" class="back-to-home-btn">ホームに戻る</a>
+    </footer>
 </body>
 </html>

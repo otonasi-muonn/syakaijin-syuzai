@@ -5,77 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fさんへのインタビュー</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>.answer ul { margin: 0; padding-left: 20px; }</style>
 </head>
 <body>
-
-    <div id="main-content" style="display: none;">
-        <header>
-            <h1>Fさんへのインタビュー</h1>
-            <div class="meta-info">
-                <p><strong>ご職業：</strong> 公務員</p>
-                <p><strong>年齢：</strong> 21歳</p>
-            </div>
-        </header>
-
-        <main>
-            <h2>仕事をすることになった経緯</h2>
-            <div class="answer">
-                <p>高校卒業して就職することにしたからです。</p>
-            </div>
-
-            <h2>専門知識をどう手に入れたか</h2>
-            <div class="answer">
-                <p>働きながら先輩や上司にしごかれて覚えました。</p>
-            </div>
-            
-            <h2>仕事の好きなところ</h2>
-            <div class="answer">
-                <p>休みが安定して取れるところです。</p>
-            </div>
-
-            <h2>仕事の嫌いなところ</h2>
-            <div class="answer">
-                <p>公務員だからって好き放題言う奴にたまに会う所です。</p>
-            </div>
-
-            <h2>１日の大雑把なタイムスケジュール</h2>
-            <div class="answer">
-                <p>
-                    7:00  起床<br>
-                    7:30  出発<br>
-                    8:30  勤務開始<br>
-                    12:00 昼休憩<br>
-                    12:45 勤務再開<br>
-                    17:00 定時あがり<br>
-                    18:00 家着<br>
-                    〰︎︎   自由時間<br>
-                    20:00 〜 21:00 晩飯、風呂、その他諸々<br>
-                    24:00 就寝
-                </p>
-            </div>
-
-            <h2>大学生へのアドバイス</h2>
-            <div class="advice">
-                <p>まだ学生の時に続けられる趣味を見つけた方が良いです。</p>
-            </div>
-        </main>
-    </div>
-
-    <script>
-        (function() {
-            // Fさんページのパスワードを設定
-            const correctPassword = "Mp4";
-
-            const enteredPassword = prompt("閲覧するにはパスワードを入力してください：");
-
-            if (enteredPassword === correctPassword) {
-                document.getElementById('main-content').style.display = 'block';
-            } else {
-                alert("パスワードが違います。");
-                document.body.innerHTML = '<h1 style="text-align: center; margin-top: 50px;">アクセスが許可されていません。</h1>';
-            }
-        })();
-    </script>
-
+    <header>
+        <h1>Fさんへのインタビュー</h1>
+        <div class="meta-info">
+            <p><strong>ご職業：</strong> 公務員</p>
+            <p><strong>年齢：</strong> age</p>
+        </div>
+    </header>
+    <main>
+        <h2>仕事をすることになった経緯</h2>
+        <div class="answer"><p>高校卒業して就職することにしたからです。</p></div>
+        <h2>専門知識をどう手に入れたか</h2>
+        <div class="answer"><p>働きながら先輩や上司にしごかれて覚えました。</p></div>
+        <h2>仕事の好きなところ</h2>
+        <div class="answer"><p>休みが安定して取れるところです。</p></div>
+        <h2>仕事の嫌いなところ</h2>
+        <div class="answer"><p>公務員だからって好き放題言う奴にたまに会う所です。</p></div>
+        <h2>１日の大雑把なタイムスケジュール</h2>
+        <div class="answer"><p>7:00  起床<br>7:30  出発<br>8:30  勤務開始<br>12:00 昼休憩<br>12:45 勤務再開<br>17:00 定時あがり<br>18:00 家着<br>〰︎︎   自由時間<br>20:00 〜 21:00 晩飯、風呂、その他諸々<br>24:00 就寝</p></div>
+        <h2>大学生へのアドバイス</h2>
+        <div class="advice"><p>まだ学生の時に続けられる趣味を見つけた方が良いです。</p></div>
+    </main>
+    <footer class="footer-nav">
+        <a href="../" class="back-to-home-btn">ホームに戻る</a>
+    </footer>
 </body>
 </html>

@@ -5,79 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aさんへのインタビュー</title>
     <link rel="stylesheet" href="../css/style.css">
-    <style>
-        /* ★★★ 追加 ★★★ */
-        /* 最初はメインコンテンツを隠しておく */
-        #main-content {
-            display: none;
-        }
-    </style>
+    <style>.answer ul { margin: 0; padding-left: 20px; }</style>
 </head>
 <body>
-
-    <div id="main-content">
-        <header>
-            <h1>Aさんへのインタビュー</h1>
-            <div class="meta-info">
-                <p><strong>ご職業：</strong> 飲食店経営</p>
-                <p><strong>年齢：</strong> 無回答</p>
-            </div>
-        </header>
-
-        <main>
-            <h2>仕事をすることになった経緯</h2>
-            <div class="answer">
-                <p>お金が欲しいから</p>
-            </div>
-
-            <h2>専門知識をどう手に入れたか</h2>
-            <div class="answer">
-                <p>資格などは時間を合わせて講習会に参加した</p>
-            </div>
-            
-            <h2>仕事の好きなところ</h2>
-            <div class="answer">
-                <p>お客様の笑顔</p>
-            </div>
-
-            <h2>仕事の嫌いなところ</h2>
-            <div class="answer">
-                <p>上からの命令、お客様からの理不尽な注文</p>
-            </div>
-
-            <h2>１日の大雑把なタイムスケジュール</h2>
-            <div class="answer">
-                <p>日によるが10:00-1:00まで仕事、2時間どこかで休憩</p>
-            </div>
-
-            <h2>大学生へのアドバイス</h2>
-            <div class="advice">
-                <p>24時間営業や、年中無休の仕事は社員になると根気が必要になります。自分には根性ないよ、という人はあまり向かないと思います。</p>
-            </div>
-        </main>
-    </div>
-
-    <script>
-        // この関数がページの読み込み時に自動で実行される
-        (function() {
-            // 1. パスワードを設定（好きな文字列に変更してください）
-            const correctPassword = "t5U"; // 例：パスワードを「2525」に設定
-
-            // 2. パスワード入力のポップアップを表示
-            const enteredPassword = prompt("閲覧するにはパスワードを入力してください：");
-
-            // 3. 入力されたパスワードが正しいかチェック
-            if (enteredPassword === correctPassword) {
-                // 正しい場合：隠していたコンテンツを表示
-                document.getElementById('main-content').style.display = 'block';
-            } else {
-                // 間違っている場合：メッセージを表示
-                alert("パスワードが違います。");
-                // <body>にエラーメッセージを書き込む
-                document.body.innerHTML = '<h1 style="text-align: center; margin-top: 50px;">アクセスが許可されていません。</h1>';
-            }
-        })();
-    </script>
-
+    <header>
+        <h1>Aさんへのインタビュー</h1>
+        <div class="meta-info">
+            <p><strong>ご職業：</strong> 飲食店経営</p>
+            <p><strong>年齢：</strong> age</p>
+        </div>
+    </header>
+    <main>
+        <h2>仕事をすることになった経緯</h2>
+        <div class="answer"><p>お金が欲しいから</p></div>
+        <h2>専門知識をどう手に入れたか</h2>
+        <div class="answer"><p>資格などは時間を合わせて講習会に参加した</p></div>
+        <h2>仕事の好きなところ</h2>
+        <div class="answer"><p>お客様の笑顔</p></div>
+        <h2>仕事の嫌いなところ</h2>
+        <div class="answer"><p>上からの命令、お客様からの理不尽な注文</p></div>
+        <h2>１日の大雑把なタイムスケジュール</h2>
+        <div class="answer"><p>日によるが10:00-1:00まで仕事、2時間どこかで休憩</p></div>
+        <h2>大学生へのアドバイス</h2>
+        <div class="advice"><p>24時間営業や、年中無休の仕事は社員になると根気が必要になります。自分には根性ないよ、という人はあまり向かないと思います。</p></div>
+    </main>
+    <footer class="footer-nav">
+        <a href="../" class="back-to-home-btn">ホームに戻る</a>
+    </footer>
 </body>
 </html>

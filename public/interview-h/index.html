@@ -5,72 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hさんへのインタビュー</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>.answer ul { margin: 0; padding-left: 20px; }</style>
 </head>
 <body>
-
-    <div id="main-content" style="display: none;">
-        <header>
-            <h1>Hさんへのインタビュー</h1>
-            <div class="meta-info">
-                <p><strong>ご職業：</strong> 農薬製造業</p>
-                <p><strong>年齢：</strong> 21歳</p>
-            </div>
-        </header>
-
-        <main>
-            <h2>仕事をすることになった経緯</h2>
-            <div class="answer">
-                <p>高校卒業後、進学する予定がなかったからです。</p>
-            </div>
-
-            <h2>専門知識をどう手に入れたか</h2>
-            <div class="answer">
-                <p>働きながら教えてもらいました。</p>
-            </div>
-            
-            <h2>仕事の好きなところ</h2>
-            <div class="answer">
-                <p>顆粒とかの掃除です。</p>
-            </div>
-
-            <h2>仕事の嫌いなところ</h2>
-            <div class="answer">
-                <p>山奥の工場だから通勤めんどい、夏暑い、冬寒いです。</p>
-            </div>
-
-            <h2>１日の大雑把なタイムスケジュール</h2>
-            <div class="answer">
-                <p>
-                    8:25 始業<br>
-                    10時くらいに10分休憩<br>
-                    12時に1時間休憩<br>
-                    14時に10分休憩<br>
-                    18時くらいに終わり
-                </p>
-            </div>
-
-            <h2>大学生へのアドバイス</h2>
-            <div class="advice">
-                <p>完全週休二日制、福利厚生はしっかり確認したほうが良いです。</p>
-            </div>
-        </main>
-    </div>
-
-    <script>
-        (function() {
-            // Hさんページのパスワードを設定
-            const correctPassword = "C8h";
-
-            const enteredPassword = prompt("閲覧するにはパスワードを入力してください：");
-
-            if (enteredPassword === correctPassword) {
-                document.getElementById('main-content').style.display = 'block';
-            } else {
-                alert("パスワードが違います。");
-                document.body.innerHTML = '<h1 style="text-align: center; margin-top: 50px;">アクセスが許可されていません。</h1>';
-            }
-        })();
-    </script>
-
+    <header>
+        <h1>Hさんへのインタビュー</h1>
+        <div class="meta-info">
+            <p><strong>ご職業：</strong> 農薬製造業</p>
+            <p><strong>年齢：</strong> age</p>
+        </div>
+    </header>
+    <main>
+        <h2>仕事をすることになった経緯</h2>
+        <div class="answer"><p>高校卒業後、進学する予定がなかったからです。</p></div>
+        <h2>専門知識をどう手に入れたか</h2>
+        <div class="answer"><p>働きながら教えてもらいました。</p></div>
+        <h2>仕事の好きなところ</h2>
+        <div class="answer"><p>顆粒とかの掃除です。</p></div>
+        <h2>仕事の嫌いなところ</h2>
+        <div class="answer"><p>山奥の工場だから通勤めんどい、夏暑い、冬寒いです。</p></div>
+        <h2>１日の大雑把なタイムスケジュール</h2>
+        <div class="answer"><p>8:25 始業<br>10時くらいに10分休憩<br>12時に1時間休憩<br>14時に10分休憩<br>18時くらいに終わり</p></div>
+        <h2>大学生へのアドバイス</h2>
+        <div class="advice"><p>完全週休二日制、福利厚生はしっかり確認したほうが良いです。</p></div>
+    </main>
+    <footer class="footer-nav">
+        <a href="../" class="back-to-home-btn">ホームに戻る</a>
+    </footer>
 </body>
 </html>

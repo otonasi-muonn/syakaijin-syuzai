@@ -5,66 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>株式会社 社会人ではない(無)さんへのインタビュー</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>.answer ul { margin: 0; padding-left: 20px; }</style>
 </head>
 <body>
-
-    <div id="main-content" style="display: none;">
-        <header>
-            <h1>株式会社 社会人ではない(無)さんへのインタビュー</h1>
-            <div class="meta-info">
-                <p><strong>ご職業：</strong> 創作</p>
-                <p><strong>年齢：</strong> 25<sup>999</sup>歳</p>
-            </div>
-        </header>
-
-        <main>
-            <h2>仕事をすることになった経緯</h2>
-            <div class="answer">
-                <p>なんとなく？</p>
-            </div>
-
-            <h2>専門知識をどう手に入れたか</h2>
-            <div class="answer">
-                <p>独学</p>
-            </div>
-            
-            <h2>仕事の好きなところ</h2>
-            <div class="answer">
-                <p>楽しい</p>
-            </div>
-
-            <h2>仕事の嫌いなところ</h2>
-            <div class="answer">
-                <p>機材がたけぇ</p>
-            </div>
-
-            <h2>１日の大雑把なタイムスケジュール</h2>
-            <div class="answer">
-                <p>想像の毎日</p>
-            </div>
-
-            <h2>大学生へのアドバイス</h2>
-            <div class="advice">
-                <p>働け</p>
-            </div>
-        </main>
-    </div>
-
-    <script>
-        (function() {
-            // Dさんページのパスワードを設定
-            const correctPassword = "Su2";
-
-            const enteredPassword = prompt("閲覧するにはパスワードを入力してください：");
-
-            if (enteredPassword === correctPassword) {
-                document.getElementById('main-content').style.display = 'block';
-            } else {
-                alert("パスワードが違います。");
-                document.body.innerHTML = '<h1 style="text-align: center; margin-top: 50px;">アクセスが許可されていません。</h1>';
-            }
-        })();
-    </script>
-
+    <header>
+        <h1>株式会社 社会人ではない(無)さんへのインタビュー</h1>
+        <div class="meta-info">
+            <p><strong>ご職業：</strong> 創作</p>
+            <p><strong>年齢：</strong> age</p>
+        </div>
+    </header>
+    <main>
+        <h2>仕事をすることになった経緯</h2>
+        <div class="answer"><p>なんとなく？</p></div>
+        <h2>専門知識をどう手に入れたか</h2>
+        <div class="answer"><p>独学</p></div>
+        <h2>仕事の好きなところ</h2>
+        <div class="answer"><p>楽しい</p></div>
+        <h2>仕事の嫌いなところ</h2>
+        <div class="answer"><p>機材がたけぇ</p></div>
+        <h2>１日の大雑把なタイムスケジュール</h2>
+        <div class="answer"><p>想像の毎日</p></div>
+        <h2>大学生へのアドバイス</h2>
+        <div class="advice"><p>働け</p></div>
+    </main>
+    <footer class="footer-nav">
+        <a href="../" class="back-to-home-btn">ホームに戻る</a>
+    </footer>
 </body>
 </html>

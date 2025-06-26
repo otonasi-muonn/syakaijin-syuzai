@@ -5,82 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cさんへのインタビュー</title>
     <link rel="stylesheet" href="../css/style.css">
-    <style>
-        /* Cさんのページにだけ適用する追加スタイル（箇条書き用） */
-        .answer ul {
-            margin: 0;
-            padding-left: 20px;
-        }
-    </style>
+    <style>.answer ul { margin: 0; padding-left: 20px; }</style>
 </head>
 <body>
-
-    <div id="main-content" style="display: none;">
-        <header>
-            <h1>Cさんへのインタビュー</h1>
-            <div class="meta-info">
-                <p><strong>ご職業：</strong> スマホ販売・プラン案内</p>
-                <p><strong>年齢：</strong> 無回答</p>
-            </div>
-        </header>
-
-        <main>
-            <h2>仕事をすることになった経緯</h2>
-            <div class="answer">
-                <p>転職サイトで良さげなものを選んだ結果です。</p>
-            </div>
-
-            <h2>専門知識をどう手に入れたか</h2>
-            <div class="answer">
-                <p>会社での研修や、自宅での勉強で身につけました。</p>
-            </div>
-            
-            <h2>仕事の好きなところ</h2>
-            <div class="answer">
-                <ul>
-                    <li>色々な方と交流できるところ(職業、人種、思想など)</li>
-                    <li>今使ってるプランよりより安く提案できた時の達成感</li>
-                    <li>ポイ活</li>
-                </ul>
-            </div>
-
-            <h2>仕事の嫌いなところ</h2>
-            <div class="answer">
-                <ul>
-                    <li>変な客にあたるとキモイところ</li>
-                    <li>セクハラ客がまじキモイところ</li>
-                </ul>
-            </div>
-
-            <h2>１日の大雑把なタイムスケジュール</h2>
-            <div class="answer">
-                <p>10時に出勤し、13時から16時の間の好きなタイミングで1時間休憩を取り、19時に退勤します。</p>
-            </div>
-
-            <h2>大学生へのアドバイス</h2>
-            <div class="advice">
-                <p>コミュニケーションが苦手だから接客ができないとか、一人でいるのが好きだから大勢でする仕事ができない、なんて事はないです。</p>
-                <p>30歳くらいまでは転職に優しいので、とりあえずやってみよう、合わなきゃ辞めたらいいや！くらいの気持ちで飛び込んでみるのがいいんじゃないでしょうか。</p>
-                <p>いい事も辛いこともあるでしょうが応援しております。</p>
-            </div>
-        </main>
-    </div>
-
-    <script>
-        (function() {
-            // Cさんページのパスワードを設定
-            const correctPassword = "h8D";
-
-            const enteredPassword = prompt("閲覧するにはパスワードを入力してください：");
-
-            if (enteredPassword === correctPassword) {
-                document.getElementById('main-content').style.display = 'block';
-            } else {
-                alert("パスワードが違います。");
-                document.body.innerHTML = '<h1 style="text-align: center; margin-top: 50px;">アクセスが許可されていません。</h1>';
-            }
-        })();
-    </script>
-
+    <header>
+        <h1>Cさんへのインタビュー</h1>
+        <div class="meta-info">
+            <p><strong>ご職業：</strong> スマホ販売・プラン案内</p>
+            <p><strong>年齢：</strong> age</p>
+        </div>
+    </header>
+    <main>
+        <h2>仕事をすることになった経緯</h2>
+        <div class="answer"><p>転職サイトで良さげなものを選んだ結果です。</p></div>
+        <h2>専門知識をどう手に入れたか</h2>
+        <div class="answer"><p>会社での研修や、自宅での勉強で身につけました。</p></div>
+        <h2>仕事の好きなところ</h2>
+        <div class="answer"><ul><li>色々な方と交流できるところ(職業、人種、思想など)</li><li>今使ってるプランよりより安く提案できた時の達成感</li><li>ポイ活</li></ul></div>
+        <h2>仕事の嫌いなところ</h2>
+        <div class="answer"><ul><li>変な客にあたるとキモイところ</li><li>セクハラ客がまじキモイところ</li></ul></div>
+        <h2>１日の大雑把なタイムスケジュール</h2>
+        <div class="answer"><p>10時に出勤し、13時から16時の間の好きなタイミングで1時間休憩を取り、19時に退勤します。</p></div>
+        <h2>大学生へのアドバイス</h2>
+        <div class="advice"><p>コミュニケーションが苦手だから接客ができないとか、一人でいるのが好きだから大勢でする仕事ができない、なんて事はないです。</p><p>30歳くらいまでは転職に優しいので、とりあえずやってみよう、合わなきゃ辞めたらいいや！くらいの気持ちで飛び込んでみるのがいいんじゃないでしょうか。</p><p>いい事も辛いこともあるでしょうが応援しております。</p></div>
+    </main>
+    <footer class="footer-nav">
+        <a href="../" class="back-to-home-btn">ホームに戻る</a>
+    </footer>
 </body>
 </html>
